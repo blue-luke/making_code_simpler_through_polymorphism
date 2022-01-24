@@ -11,12 +11,5 @@ class AssertionList
     @assertions.each do |assertion|
       assertion.evaluate
     end
-    # @assertions.each do |assertion|
-    #   if assertion.is_a?(TruthyAssertion)
-    #     assertion.truthy
-    #   elsif assertion.is_a?(EqualAssertion)
-    #     assertion.equal
-    #   end
-    # end
   end
 end
