@@ -3,13 +3,17 @@ class TruthyAssertion
     @test_value = test_value
   end
 
+  def evaluate
+    truthy
+  end
+
+  private
+
   def truthy
     unless valid?
       raise "#{@test_value} is not truthy"
     end
   end
-
-  private
 
   def valid?
     !!@test_value
